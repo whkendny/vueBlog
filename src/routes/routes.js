@@ -1,3 +1,4 @@
+/*admin*/
 import Reg from '../components/backEnd/Reg';
 import Login from '../components/backEnd/Login';
 import Admin from '../components/backEnd/Admin';
@@ -5,6 +6,7 @@ import ArticleCreate from '../components/backEnd/ArticleCreate'
 import ArticleList from '../components/backEnd/ArticleList'
 import ArticleEdit from '../components/backEnd/ArticleEdit'
 import ClassList from '../components/backEnd/ClassList'
+/*FE*/
 import Home from '../components/fronted/Home';
 import Front from '../components/fronted/Front';
 import About from '../components/fronted/About';

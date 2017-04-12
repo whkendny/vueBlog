@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="about" v-loading="loading2" element-loading-text="加载中">
     <div v-if="shows">
-      <h2>平凡之路</h2>
+      <h2>kendny的blog</h2>
       <p>一个有强迫症的前端患者</p>
       <p><a href="http://www.jianshu.com/u/556ae9b7eaf5">简书</a><a href="https://github.com/elva2596" target="_blank">Github</a>&nbsp;&nbsp;<a href="#">微博</a</p>
       <h2>关于网站</h2>

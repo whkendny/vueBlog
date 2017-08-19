@@ -1,5 +1,6 @@
 var path = require('path')
 var config = require('../config')
+//抽离css样式,防止将样式打包在js中引起页面样式加载错乱的现象
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 exports.assetsPath = function (_path) {

@@ -5,7 +5,7 @@ module.exports = {
   build: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../dist'),  //编译文件的跟目录
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,

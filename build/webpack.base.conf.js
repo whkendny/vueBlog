@@ -46,6 +46,7 @@ module.exports = {
     // 不进行自动补全或处理的文件或者文件夹
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
+      // 默认路径代理，例如 import Vue from 'vue'，会自动到 'vue/dist/vue.common.js'中寻找
       'vue$': 'vue/dist/vue.common.js',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
@@ -57,6 +58,7 @@ module.exports = {
   },
   module: {
     // preLoaders: [
+    // //  预处理的文件及使用的 loader
     //   {
     //     test: /\.vue$/,
     //     loader: 'eslint',
@@ -75,6 +77,7 @@ module.exports = {
     //   }
     // ],
     loaders: [
+      // 需要处理的文件及使用的 loader
       {
         test: /\.vue$/,
         loader: 'vue'
@@ -110,9 +113,11 @@ module.exports = {
     ]
   },
   eslint: {
+    // eslint 代码检查配置工具
     formatter: require('eslint-friendly-formatter')
   },
   vue: {
+    // .vue 文件配置 loader 及工具 (autoprefixer)
     loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
     postcss: [
       require('autoprefixer')({

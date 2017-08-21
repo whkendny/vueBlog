@@ -1,4 +1,6 @@
+// 语义化版本检查插件（The semantic version parser used by npm）
 var semver = require('semver')
+// 用于在控制台输出带颜色字体的插件
 var chalk = require('chalk')
 var packageConfig = require('../package.json')
 var exec = function (cmd) {

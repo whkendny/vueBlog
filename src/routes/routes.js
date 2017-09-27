@@ -6,6 +6,7 @@ import ArticleCreate from '../components/backEnd/ArticleCreate'
 import ArticleList from '../components/backEnd/ArticleList'
 import ArticleEdit from '../components/backEnd/ArticleEdit'
 import ClassList from '../components/backEnd/ClassList'
+
 /*FE*/
 import Home from '../components/fronted/Home';
 import Front from '../components/fronted/Front';
@@ -33,11 +34,14 @@ export default [
       {path:'article/:id',component:Article, meta:{auth:false,scrollToTop: true}},
     ]
   },
+  
   {
     path:'/login',
     component:Login,
     hidden:true
   },
+
+
   {
     // 后台路由
     path:'/admin',

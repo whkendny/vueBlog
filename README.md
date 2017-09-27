@@ -172,7 +172,8 @@
 
 #### 全局安装supervisor
 `npm install -g supervisor`
-
+##### supervisor 的作用
+Node Supervisor原本是用于服务器上Node.js应用崩溃的时候，自己重新启动。当然它也可以监控你的项目的js（或CoffeeScript）文件变化，进而重启来方便我们调试应用程序。
 
 #### 启动mongodb服务器
 
@@ -195,7 +196,8 @@
 #### Notice
 * 前后端启动时的路径不一样，前端在项目根目录，后端在servser根目录，其实可以把后端分离出来。
 * 因为是前后端分离项目，必然涉及到跨域，使用webpack的proxyTable,进入到config文件夹的index.js,将proxyTable配置成：
-`proxyTable: {
+```
+proxyTable: {
         '/api':{
         target:'http://localhost:3009/api',
         changeOrigin:true,
@@ -203,7 +205,8 @@
           '^/api':''
         }
       }
-    },`
+    },
+```
 
 
 

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import api from '../api'
 import router from '../routes'
 import MsgAlert from './MsgAlert'
+
 export default {
 // 后台注册
   UserReg({commit},data){
@@ -20,7 +21,7 @@ export default {
        })
    },
   //  后台登录
-   UserLogin({commit},data){
+  UserLogin({commit},data){
      api.localLogin(data)
           .then(({data})=>{
             if(data.code==200){
@@ -37,15 +38,14 @@ export default {
              MsgAlert(error.toString())
           })
    },
-   UserLogout({commit}){
+  UserLogout({commit}){
      commit('USER_SIGNOUT');
      router.push({path:'/login'});
    },
-   showProgress({commit},number){
+  showProgress({commit},number){
      commit('SHOW_PROGRESS',number)
    },
-   changeHeadLine({commit},headline){
-    
+  changeHeadLine({commit},headline){
      commit('HEAD_LINE',headline)
    }
 }

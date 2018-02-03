@@ -1,6 +1,8 @@
+//  对路由是否需要登录的权限进行控制
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from '../store'
+import NProgress from 'NProgress'
 
 Vue.use(VueRouter)
 import routes from './routes'
@@ -20,7 +22,7 @@ const router =  new VueRouter({
 // 路由钩子
 router.beforeEach(({meta,path},from,next)=>{
   store.dispatch('showProgress',0)
-  // NProgress.start();
+  NProgress.start();
   let {auth=true}=meta
   let isLogin = Boolean(store.state.token)
 
@@ -38,7 +40,7 @@ router.beforeEach(({meta,path},from,next)=>{
   // 未登录的情况下访问reg则直接路由
   next();
 })
-// router.afterEach(route=>{
-//   NProgress.done(true);
-// })
+router.afterEach(route=>{
+  NProgress.done(true);
+})
 export default router

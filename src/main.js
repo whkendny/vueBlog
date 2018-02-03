@@ -16,4 +16,3 @@ new Vue({
   template: '<App/>',
   components: { App }//此处的components用在了上面的template里面用来编译
 })
-

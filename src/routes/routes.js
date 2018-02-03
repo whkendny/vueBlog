@@ -14,15 +14,15 @@ import NotFound from '../components/NotFound'
 export default [
 
   {
-    path:'/reg',
+    path:'/reg', //注册
     component:Reg,
     meta:{auth:false},
     hidden:true
   },
-  
+
   {
     path:'/',
-    component:Front,//这是文章页
+    component:Front,//这是Blog 前端
     hidden:true,
     children:[
       {path:'',redirect:'home',  meta:{auth:false}},
@@ -33,7 +33,7 @@ export default [
     ]
   },
   {
-    path:'/login',
+    path:'/login', //登录
     component:Login,
     hidden:true
   },

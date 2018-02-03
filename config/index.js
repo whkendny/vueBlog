@@ -21,6 +21,7 @@ module.exports = {
     port: 8088,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    // 解决前后端跨域
     proxyTable: {
       '/api':{
         target:'http://127.0.0.1:3009/api',

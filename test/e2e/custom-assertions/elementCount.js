@@ -1,3 +1,4 @@
+// 自定义的断言方法
 // A custom Nightwatch assertion.
 // the name of the method is the filename.
 // can be used in tests like this:

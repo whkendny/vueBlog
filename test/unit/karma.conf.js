@@ -45,17 +45,19 @@ module.exports = function (config) {
     // 1. install corresponding karma launcher
     //    http://karma-runner.github.io/0.13/config/browsers.html
     // 2. add it to the `browsers` array below.
-    browsers: ['PhantomJS'],
-    frameworks: ['mocha', 'sinon-chai'],
-    reporters: ['spec', 'coverage'],
-    files: ['./index.js'],
-    preprocessors: {
+    browsers: ['PhantomJS'], // 运行测试用例的环境
+    frameworks: ['mocha', 'sinon-chai'], //默认加载的几个框架
+    reporters: ['spec', 'coverage'],  //使用的汇报框架
+    files: ['./index.js'], //预加载文件
+    preprocessors: { //预处理
       './index.js': ['webpack', 'sourcemap']
     },
+    //webpack配置
     webpack: webpackConfig,
     webpackMiddleware: {
       noInfo: true
     },
+    // coverage配置
     coverageReporter: {
       dir: './coverage',
       reporters: [

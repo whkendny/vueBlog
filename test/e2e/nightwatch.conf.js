@@ -6,7 +6,7 @@ module.exports = {
   src_folders: ['test/e2e/specs'],
   output_folder: 'test/e2e/reports',
   custom_assertions_path: ['test/e2e/custom-assertions'],
-
+ // 对selenium的配置
   selenium: {
     start_process: true,
     server_path: 'node_modules/selenium-server/lib/runner/selenium-server-standalone-2.53.1.jar',
@@ -16,7 +16,7 @@ module.exports = {
       'webdriver.chrome.driver': require('chromedriver').path
     }
   },
-
+// 测试环境的配置
   test_settings: {
     default: {
       selenium_port: 4444,

@@ -14,8 +14,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     // 编译发布上线路径的根目录，可配置为资源服务器域名或 CDN 域名
     assetsPublicPath: '/',
+<<<<<<< HEAD
     // 是否开启 cssSourceMap
     productionSourceMap: true,
+=======
+    productionSourceMap: false,
+>>>>>>> 055cf1b3a186aa5c112ec4775302fd2728431161
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
     // Before setting to `true`, make sure to:
@@ -35,10 +39,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     // 编译发布上线路径的根目录，可配置为资源服务器域名或 CDN 域名
     assetsPublicPath: '/',
+<<<<<<< HEAD
     // 需要 proxyTable 代理的接口（可跨域）
+=======
+    // 解决前后端跨域
+>>>>>>> 055cf1b3a186aa5c112ec4775302fd2728431161
     proxyTable: {
       '/api':{
-        target:'http://localhost:3009/api',
+        target:'http://127.0.0.1:3009/api',
         changeOrigin:true,
         pathRewrite:{
           '^/api':''

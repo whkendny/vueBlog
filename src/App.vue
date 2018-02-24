@@ -13,6 +13,7 @@
 
 
 <script>
+<<<<<<< HEAD
 import NProgress from 'nprogress' //页面顶部进度条
 import 'nprogress/nprogress.css'
 NProgress.configure({
@@ -22,9 +23,16 @@ import {
     mapState
 }
 from 'vuex'
+=======
+// import NProgress from 'nprogress'//页面顶部进度条
+// import 'nprogress/nprogress.css'
+// NProgress.configure({ showSpinner: false });
+import {mapState} from 'vuex'
+>>>>>>> 055cf1b3a186aa5c112ec4775302fd2728431161
 export default {
     components: {
 
+<<<<<<< HEAD
     },
     methods: {},
     computed: mapState(['progress']),
@@ -44,6 +52,26 @@ export default {
     mounted() {
         // NProgress.start();
     }
+=======
+  },
+  methods:{
+  },
+  computed:mapState(['progress']),
+  // watch:{
+  //   progress(val){
+  //     if(val==0){
+  //       NProgress.start();
+  //     }else if(val==100){
+  //       NProgress.done();
+  //     }else{
+  //       NProgress.set(val/100)
+  //       // NProgress.start();
+  //     }
+  //   }
+  // },
+  mounted(){
+  }
+>>>>>>> 055cf1b3a186aa5c112ec4775302fd2728431161
 }
 
 </script>

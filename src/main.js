@@ -1,6 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+<<<<<<< HEAD
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App'
@@ -9,13 +10,16 @@ import './assets/css/commen.css'
 
 Vue.use(ElementUI)
 // 路由
+=======
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-default/index.css';
+import App from './App';
+import 'assets/css/commen.css';//这里的样式可以覆盖index.css
+Vue.use(ElementUI);
+>>>>>>> 055cf1b3a186aa5c112ec4775302fd2728431161
 import router from './routes/index'
 // vuex 状态管理
 import store from './store/index'
-// import NProgress from 'NProgress'
-// import Mock from './mock'
-// Mock.bootstrap();
-
 /* eslint-disable no-new */
 
 new Vue({
